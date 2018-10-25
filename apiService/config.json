@@ -1,0 +1,44 @@
+{
+  "url":"http://172.16.0.8",
+  "uri":"/api/",
+  "addapi":[{
+      "baseUrl":"bi-datasource-api.shanyishanmei.com",
+      "appGroup":"api车源端",
+      "appKey":"25065732",
+      "appSecret":"6b69ac89baab0511a71b90ef76a2d4c3",
+      "apiPath":"/api/car_scan",
+      "apiMethod":"GET",
+      "apiDesc":"车源URL访问量",
+      "pmOwner":"",
+      "rdOwner":""
+      }
+    ],
+  "post":{
+    "baseUrl":"bi-datasource-api.shanyishanmei.com",
+    "apiPath":"/black_list",
+    "apiMap":"{\"md5_phone\":\"1129a81902854fd2aba1188c235848d2\"}"
+  },
+  "addcontrol":[{
+      "baseUrl":"bi-datasource-api.shanyishanmei.com",
+      "appGroup":"api车源端",
+      "apiPath":"/api/black_list_test",
+      "warnType":"one",
+      "warnTitle":"风控黑名单调用次数so many",
+      "warnSql":"select * from table",
+      "warnDemo":"",
+      "warnDesc":"风控黑名单每日调用次数不得超过1000次"
+  }],
+  "userwarn":[{
+    "userId":"fengjian",
+    "userName":"冯剑",
+    "email":"fengjian@renrenche.com",
+    "phone":"15101149854",
+    "baseUrl":"bi-datasource-api.shanyishanmei.com",
+    "apiPath":"/black_list"
+  }],
+  "warnonce":[{
+    "url":"bi-datasource-api.shanyishanmei.com",
+    "path":"/black_list"
+  }],
+  "showlist":"GET"
+}
